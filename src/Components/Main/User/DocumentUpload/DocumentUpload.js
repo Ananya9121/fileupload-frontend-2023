@@ -28,7 +28,7 @@ const DocumentUpload = () => {
         const formData = new FormData();
         formData.append('file', selectedFile);
         // You can use APIs like fetch or axios to upload the file to the server
-        let url = `${config.endpoint}/books/upload`;
+        let url = `${config.endpoint}/userFileUpload/upload`;
 
         await axios.post(url, formData, {
           headers: {
@@ -54,7 +54,7 @@ const DocumentUpload = () => {
 
   const performAPICall = async () => {
     try {
-      let listOfFileUpload = await axios.get(`${config.endpoint}/books`, {
+      let listOfFileUpload = await axios.get(`${config.endpoint}/userFileUpload`, {
         headers: {
           'Authorization': `Bearer ${token}`,
         }

@@ -133,7 +133,7 @@ function Login() {
                   className="form-control"
                   id="colFormLabeloption2"
                   placeholder="Enter the Password"
-                  type="text"
+                  type="password"
                   onChange={(e) => handleChange(e)}
                   value={userDetails.password}
                   name="password"

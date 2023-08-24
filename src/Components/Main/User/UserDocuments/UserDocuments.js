@@ -18,7 +18,7 @@ function UserDocuments({ userData }) {
         try {
             if (fileId) {
 
-                let url = `${config.endpoint}/books/deleteFile`;
+                let url = `${config.endpoint}/userFileUpload/deleteFile`;
                 await axios.delete(`${url}/${fileId}`, {
                     headers: {
                         'Authorization': `Bearer ${token}`,
