@@ -6,7 +6,8 @@ import DocumentUpload from "./Components/Main/User/DocumentUpload/DocumentUpload
 
 
 export const config = {
-  endpoint: `http://localhost:3004`,
+  endpoint: `
+  https://fine-plum-deer-boot.cyclic.cloud`,
 };
 
 function App() {
